@@ -1,5 +1,6 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -33,6 +34,9 @@ body {
 }
 
 .menu {
+    position: sticky;
+    top: 0;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +47,9 @@ body {
     width: 100%;
 
     z-index: 2;
-    position: sticky;
+
+    background: linear-gradient( #0f172a69 20%,  transparent);
+    backdrop-filter: blur(10px);
 }
 
 nav.menu .logo {
@@ -342,8 +348,6 @@ nav.menu .menu_list a.btn_menu:hover {
     font-size: 4em;
 }
 
-/* Projetos */
-
 .projetos{
     display: flex;
     justify-content: center;
@@ -365,11 +369,11 @@ nav.menu .menu_list a.btn_menu:hover {
 
 .container_projeto{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 
-    width: 80%;
-    height: 40vh;
+    width: 85%;
+    height: 50vh;
     padding-left: 1.5%;
     padding-right: 1.5%;
     /*background: #111827;*/
@@ -386,7 +390,7 @@ nav.menu .menu_list a.btn_menu:hover {
     border-top: 2px solid #75777eb9;
     border-left: 1px solid #70747ea6;
     border-bottom: 1px solid #70747ea6;
-    opacity: 0.7;
+    /*opacity: 0.7;*/
     /*box-shadow: 10px -10px 25px #2d3b55;*/
     box-shadow: 0px 0px 25px #2d3b55;
 }
@@ -395,17 +399,17 @@ nav.menu .menu_list a.btn_menu:hover {
 .right_container_projeto{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 
-    width: 65%;
-    height: 85%;
+    width: 70%;
+    height: 100%;
 
-
+    padding-left: 3%;
 }
 
 .right_container_projeto .text_projeto{
-    width: 80%;
+    width: 90%;
 }
 
 .right_container_projeto .text_projeto h3{
@@ -426,12 +430,13 @@ nav.menu .menu_list a.btn_menu:hover {
     flex-direction: column;
 
     padding-top: 2%;
-    width: 100%;
+    padding-bottom: 2%;
+    width: 90%;
 }
 
 .bottom_left_projeto .stack_container div{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 1vw;
 
@@ -463,8 +468,8 @@ nav.menu .menu_list a.btn_menu:hover {
 
 .bottom_left_projeto .container_results_github p{
     padding-top: 2%;    
-    width: 40%;
-    text-align: justify;
+    width: 60%;
+    text-align: left;
 
     color: #9ea8b99b;
 }
@@ -480,16 +485,14 @@ nav.menu .menu_list a.btn_menu:hover {
     justify-content: space-between;
     align-items: center;
 
-    width: 23%;
-
     text-decoration: none;
     color: white;
     
     font-weight: bold;
     font-size: 1.2em;
 
-    padding-left: 3.5%;
-    padding-right: 3.5%;
+    padding-left: 1.5vw;
+    padding-right: 2vw;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
     border: 2px solid #74c7abbd;
@@ -509,6 +512,7 @@ nav.menu .menu_list a.btn_menu:hover {
 .bottom_left_projeto .container_results_github a.btn_git i{
     border-left: 1px solid white;
     padding-left: 7%;
+    padding-right: 7%;
 
     font-size: 1.4em;
 }
@@ -524,4 +528,269 @@ nav.menu .menu_list a.btn_menu:hover {
     font-weight: bold;
     font-size: 1em;
     padding-right: 7%;
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+
+    width: 100vw;
+    height: 95vh;
+
+    background-color: #F5F7FA;
+    color: #0F172A;
+}
+
+
+.contato form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    width: 40%;
+    height: 85%;
+}
+
+.contato form h1{
+    text-align: left;
+    font-size: 3.2em;
+    margin-bottom: 1%;
+}
+
+.contato form input{
+    width: 100%;
+    height: 8%;
+
+    padding-left: 2%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    appearance: none;
+    outline: none;
+
+    border: 1px solid #0F172A;
+    border-radius: 10px;
+
+    box-shadow: 0 0 20px #19233560;
+
+    font-size: 1.2em;
+    font-family: "Manrope", sans-serif;
+
+    background-color: #f3faff67;
+    color: #192335;
+}
+
+.contato form textarea{
+    width: 100%;
+    height: 35%;
+
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 5px;
+
+    resize: none;
+
+    appearance: none;
+    outline: none;
+
+    border: 1px solid #0F172A;
+    border-radius: 10px;
+
+    box-shadow: 0 0 20px #19233560;
+
+    background-color: #f3faff67;
+    color: #192335;
+    
+    font-size: 1.5em;
+    font-family: "Manrope", sans-serif;
+}
+
+.contato form button{
+    width: 100%;
+    height: 9%;
+
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    border: 1px solid #0F172A;
+    border-radius: 10px;
+
+    background-color: #13203d;
+    color: #E4E7EC;
+    box-shadow: 0 0 20px #19233560;
+
+    transition: all .3s ease-in-out;
+}
+
+.contato form button:hover{
+    background-color: #101d5a15;
+    color: #0F172A;
+}
+
+.contato .accountInfoContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+
+    width: 40%;
+    height: 85%;
+}
+
+.contato .accountInfoContainer hr{
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #11182757;
+    border-radius: 1px;
+}
+
+
+.contato .accountInfoContainer .accountInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    width: 100%;
+    height: 10%;
+}
+
+.contato .accountInfoContainer .accountInfo .mediaLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    padding: 15px 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #0F172A;
+
+    transition: all .3s ease-out;
+}
+
+.contato .accountInfoContainer .accountInfo .mediaLink i{
+    font-size: 1.2em;
+}
+
+.contato .accountInfoContainer .accountInfo .mediaLink:hover{
+        background-color: #0F172A;
+        color: #a0b5e1;
+}
+
+.contato .accountInfoContainer .terminalCard{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 90%;
+    height: 59%;
+
+    gap: 2%;
+
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+
+    background: linear-gradient(145deg,#0f172a,#020617);
+    color: #38bdf8;
+    font-family: "Fira Code", monospace;
+
+    overflow: hidden;
+}
+
+.contato .accountInfoContainer .terminalCard .terminalHeader{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3%;
+    padding-left: 4%;
+    border-bottom: 1px solid #1e293b;
+    height: 13%;
+    /* background: #020617; */
+    background: #111827;
+}
+
+.contato .accountInfoContainer .terminalCard .terminalHeader .terminalDot{
+    height: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+}
+
+.contato .accountInfoContainer .terminalCard .terminalHeader .terminalDot.red{
+    background-color: #ff5f56;
+}
+
+.contato .accountInfoContainer .terminalCard .terminalHeader .terminalDot.yellow{
+    background-color: #ffbd2e;
+}
+
+.contato .accountInfoContainer .terminalCard .terminalHeader .terminalDot.green{
+    background-color: #27c93f;
+}
+
+.contato .terminalBody{ 
+    padding-top: 2%;
+    padding-left: 4%;
+    max-height: 80%;
+    overflow-y: scroll;
+}
+
+/* área do scroll */
+.contato .terminalBody::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* trilho do scroll */
+.contato .terminalBody::-webkit-scrollbar-track {
+    background: #020617;
+    border-radius: 10px;
+}
+
+/* barra que desliza */
+.contato .terminalBody::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+/* hover da barra */
+.contato .terminalBody::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}   
+
+.contato .terminalBody .terminalLine, .terminalInputLine{
+    list-style: none;
+}
+
+.contato .terminalBody .terminalResponse{
+    list-style-position: inside;
+    padding-left: 8%;
+    color: #cbd5f5;
+}
+
+.contato .terminalBody .terminalInputLine #campoTerminal{
+    appearance: none;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: #38bdf8;
+    font-family: "Fira Code", monospace;
+    font-size: 1em;
+}
+
+.contato .terminalBody .terminalResponse::marker{
+    color: #8be09e;
+}
+
+
+.contato .terminalBody .terminalResponse.terminalError{
+    list-style: none;
+    color: red;
 }
