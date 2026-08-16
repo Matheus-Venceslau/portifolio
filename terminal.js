@@ -115,7 +115,7 @@ function clearTerminal() {
     terminalBody.appendChild(terminalLine);
 
     inputField.addEventListener("keydown", processCommand);
-    inputField.focus();
+    inputField.focus({ preventScroll: true });
 }
 
 // inicialização
