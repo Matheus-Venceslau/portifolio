@@ -797,3 +797,621 @@ nav.menu .menu_list a.btn_menu:hover {
     list-style: none;
     color: red;
 }
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+/* =========================
+   TABLETS
+   Até 1024px
+   ========================= */
+
+@media (max-width: 1024px) {
+
+    /* MENU */
+    .menu {
+        padding: 0 3%;
+    }
+
+    nav.menu .logo {
+        width: 35%;
+    }
+
+    nav.menu .menu_list {
+        width: 60%;
+    }
+
+    nav.menu .menu_list a {
+        font-size: 0.9em;
+    }
+
+
+    /* INÍCIO */
+    .container_inicio {
+        min-height: 90vh;
+        height: auto;
+    }
+
+    .container_inicio .text_left {
+        width: 48%;
+        height: 75vh;
+        padding-left: 4%;
+    }
+
+    .container_inicio .text_left .text_size {
+        font-size: 1.7em;
+    }
+
+    .container_inicio .text_left h2 {
+        font-size: 1.4em;
+    }
+
+    .container_card {
+        width: 38%;
+        height: 90vh;
+        margin-top: -5vh;
+    }
+
+    .card_left {
+        width: 85%;
+    }
+
+
+    /* SOBRE MIM */
+    .sobre_mim {
+        height: auto;
+        min-height: 80vh;
+        padding: 8vh 5%;
+        gap: 5%;
+    }
+
+    .sobre_mim .text_left_sm {
+        width: 55%;
+    }
+
+    .sobre_mim .text_left_sm h2 {
+        font-size: 2.5em;
+    }
+
+    .statistics_right {
+        width: 40%;
+    }
+
+    .statistics_right .card_statistics h3 {
+        font-size: 3em;
+    }
+
+
+    /* PROJETOS */
+    .container_projeto {
+        width: 90%;
+        padding: 4%;
+    }
+
+    .container_projeto img {
+        width: 40%;
+    }
+
+    .right_container_projeto {
+        width: 55%;
+    }
+
+    .right_container_projeto .text_projeto h3 {
+        font-size: 1.7em;
+    }
+
+    .right_container_projeto .text_projeto p {
+        font-size: 1em;
+    }
+
+    .bottom_left_projeto .stack_container div {
+        flex-wrap: wrap;
+    }
+
+    .bottom_left_projeto .container_results_github {
+        gap: 20px;
+        align-items: center;
+    }
+
+    .bottom_left_projeto .container_results_github p {
+        width: 55%;
+    }
+
+
+    /* CONTATO */
+    .contato {
+        height: auto;
+        min-height: 90vh;
+        padding: 8vh 5%;
+        gap: 5%;
+    }
+
+    .contato form {
+        width: 45%;
+        height: 75vh;
+    }
+
+    .contato .accountInfoContainer {
+        width: 45%;
+        height: 75vh;
+    }
+
+    .contato .accountInfoContainer .terminalCard {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   CELULARES
+   Até 768px
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* MENU */
+    .menu {
+        position: sticky;
+        height: auto;
+        min-height: 70px;
+        padding: 10px 5%;
+    }
+
+    nav.menu .logo {
+        width: auto;
+    }
+
+    nav.menu .logo h1 {
+        font-size: 1em;
+    }
+
+    nav.menu .logo img {
+        height: 45px;
+    }
+
+    nav.menu .menu_list {
+        width: auto;
+        gap: 15px;
+    }
+
+    nav.menu .menu_list li:not(:last-child) {
+        display: none;
+    }
+
+    nav.menu .menu_list a.btn_menu {
+        padding: 10px 15px;
+        font-size: 0.85em;
+    }
+
+
+    /* INÍCIO */
+    .container_inicio {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        min-height: calc(100vh - 70px);
+        height: auto;
+
+        padding: 5vh 5%;
+    }
+
+    .container_inicio img {
+        height: 100%;
+        width: auto;
+        max-width: none;
+    }
+
+    .container_inicio .text_left {
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: auto;
+
+        padding: 0;
+        text-align: center;
+
+        z-index: 1;
+    }
+
+    .container_inicio .text_left .text_size {
+        font-size: 1.5em;
+    }
+
+    .container_inicio .text_left h2 {
+        width: 100%;
+        font-size: 1.25em;
+    }
+
+    .container_card {
+        width: 100%;
+        height: auto;
+
+        margin-top: 5vh;
+        padding: 0;
+    }
+
+    .card_left {
+        width: 85%;
+        max-width: 350px;
+        aspect-ratio: auto;
+
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .card_left .text_card_top {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .card_left .text_card_bottom {
+        width: 90%;
+        grid-template-columns: 50px 1fr;
+    }
+
+
+    /* SOBRE MIM */
+    .sobre_mim {
+        flex-direction: column;
+
+        height: auto;
+        min-height: auto;
+
+        padding: 10vh 7%;
+        gap: 50px;
+    }
+
+    .sobre_mim .text_left_sm {
+        width: 100%;
+
+        padding-left: 5%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .sobre_mim .text_left_sm h2 {
+        font-size: 2.2em;
+    }
+
+    .sobre_mim .text_left_sm p {
+        text-align: left;
+        line-height: 1.7;
+    }
+
+    .statistics_right {
+        width: 100%;
+        max-width: 500px;
+        aspect-ratio: auto;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 15px;
+        padding: 0;
+    }
+
+    .statistics_right .card_statistics {
+        min-height: 150px;
+    }
+
+    .statistics_right .card_statistics h3 {
+        font-size: 2.5em;
+    }
+
+
+    /* PROJETOS */
+    .projetos {
+        gap: 30px;
+        padding: 8vh 0;
+    }
+
+    .projetos h2 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    .container_projeto {
+        flex-direction: column;
+
+        width: 90%;
+        min-height: auto;
+
+        padding: 25px;
+        gap: 30px;
+    }
+
+    .container_projeto img {
+        width: 100%;
+        max-height: 300px;
+
+        border-right: none;
+        border-top: none;
+        border-left: none;
+        border-bottom: 2px solid #70747ea6;
+
+        padding-bottom: 20px;
+    }
+
+    .right_container_projeto {
+        width: 100%;
+        height: auto;
+
+        padding-left: 0;
+        gap: 20px;
+    }
+
+    .right_container_projeto .text_projeto {
+        width: 100%;
+    }
+
+    .right_container_projeto .text_projeto h3 {
+        font-size: 1.6em;
+    }
+
+    .right_container_projeto .text_projeto p {
+        font-size: 1em;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    .bottom_left_projeto {
+        width: 100%;
+    }
+
+    .bottom_left_projeto .stack_container div {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .bottom_left_projeto .stack_container p {
+        font-size: 1.1em;
+    }
+
+    .bottom_left_projeto .container_results_github {
+        flex-direction: column;
+
+        width: 100%;
+        gap: 20px;
+    }
+
+    .bottom_left_projeto .container_results_github p {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .bottom_left_projeto .container_results_github a.btn_git {
+        width: 100%;
+        justify-content: space-around;
+
+        padding: 12px 15px;
+    }
+
+
+    /* CONTATO */
+    .contato {
+        flex-direction: column;
+
+        height: auto;
+        min-height: auto;
+
+        padding: 10vh 7%;
+        gap: 60px;
+    }
+
+    .contato form {
+        width: 100%;
+        height: auto;
+
+        gap: 20px;
+    }
+
+    .contato form h1 {
+        font-size: 2.3em;
+    }
+
+    .contato form input {
+        height: 55px;
+        font-size: 1em;
+    }
+
+    .contato form textarea {
+        height: 200px;
+        font-size: 1.1em;
+    }
+
+    .contato form button {
+        height: 55px;
+        font-size: 1.1em;
+    }
+
+    .contato .accountInfoContainer {
+        width: 100%;
+        height: auto;
+
+        gap: 30px;
+    }
+
+    .contato .accountInfoContainer .terminalCard {
+        width: 100%;
+        height: 400px;
+    }
+
+    .contato .accountInfoContainer .accountInfo {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .contato .accountInfoContainer .accountInfo .mediaLink {
+        padding: 10px 15px;
+    }
+}
+
+
+/* =========================
+   CELULARES PEQUENOS
+   Até 480px
+   ========================= */
+
+@media (max-width: 480px) {
+
+    /* MENU */
+    .menu {
+        padding: 8px 4%;
+    }
+
+    nav.menu .logo h1 {
+        font-size: 0.85em;
+    }
+
+    nav.menu .logo img {
+        height: 38px;
+    }
+
+    nav.menu .menu_list a.btn_menu {
+        padding: 8px 12px;
+        font-size: 0.75em;
+    }
+
+
+    /* INÍCIO */
+    .container_inicio {
+        padding: 4vh 4%;
+    }
+
+    .container_inicio .text_left .text_size {
+        font-size: 1.25em;
+    }
+
+    .container_inicio .text_left h2 {
+        font-size: 1.05em;
+    }
+
+    .container_card {
+        margin-top: 30px;
+    }
+
+    .card_left {
+        width: 95%;
+        padding: 25px 15px;
+    }
+
+    .card_left .text_card_bottom {
+        width: 100%;
+        grid-template-columns: 45px 1fr;
+        row-gap: 15px;
+    }
+
+
+    /* SOBRE MIM */
+    .sobre_mim {
+        padding: 8vh 5%;
+    }
+
+    .sobre_mim .text_left_sm {
+        padding-left: 15px;
+    }
+
+    .sobre_mim .text_left_sm h2 {
+        font-size: 1.8em;
+    }
+
+    .sobre_mim .text_left_sm p {
+        font-size: 0.95em;
+    }
+
+    .statistics_right {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .statistics_right .card_statistics.large_card {
+        grid-column: auto;
+    }
+
+    .statistics_right .card_statistics {
+        min-height: 130px;
+    }
+
+    .statistics_right .card_statistics h3 {
+        font-size: 2.2em;
+    }
+
+
+    /* PROJETOS */
+    .projetos h2 {
+        font-size: 1.9em;
+    }
+
+    .container_projeto {
+        width: 94%;
+        padding: 20px;
+    }
+
+    .container_projeto img {
+        max-height: 220px;
+    }
+
+    .right_container_projeto .text_projeto h3 {
+        font-size: 1.4em;
+    }
+
+    .right_container_projeto .text_projeto p {
+        font-size: 0.9em;
+    }
+
+    .bottom_left_projeto .stack_container p {
+        font-size: 1em;
+    }
+
+    .bottom_left_projeto .stack_container div p.stack {
+        font-size: 0.7em;
+        padding: 5px 8px;
+    }
+
+    .bottom_left_projeto .container_results_github a.btn_git {
+        font-size: 1em;
+    }
+
+
+    /* CONTATO */
+    .contato {
+        padding: 8vh 5%;
+    }
+
+    .contato form h1 {
+        font-size: 1.9em;
+    }
+
+    .contato form input {
+        height: 50px;
+    }
+
+    .contato form textarea {
+        height: 180px;
+    }
+
+    .contato .accountInfoContainer .terminalCard {
+        height: 350px;
+    }
+
+    .contato .accountInfoContainer .accountInfo .mediaLink {
+        padding: 8px 10px;
+        font-size: 0.85em;
+    }
+
+    .contato .terminalBody {
+        font-size: 0.8em;
+    }
+
+    .contato .terminalBody .terminalResponse {
+        padding-left: 5%;
+    }
+
+    .contato .terminalBody .terminalInputLine #campoTerminal {
+        width: 70%;
+    }
+}
