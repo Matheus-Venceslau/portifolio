@@ -783,6 +783,7 @@ nav.menu .menu_list a.btn_menu:hover {
     color: #38bdf8;
     font-family: "Fira Code", monospace;
     font-size: 1em;
+    width: 50%;
 }
 
 .contato .terminalBody .terminalResponse::marker{
