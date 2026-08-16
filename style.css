@@ -373,10 +373,11 @@ nav.menu .menu_list a.btn_menu:hover {
     align-items: center;
 
     width: 85%;
-    height: 50vh;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-    /*background: #111827;*/
+    min-height: 50vh;
+    height: auto;
+
+    padding: 3% 1.5%;
+
     background: linear-gradient(to top, #111827,#192335);
     border: 1px solid rgba(59,130,246,0.2);
     border-radius: 15px;
@@ -384,17 +385,18 @@ nav.menu .menu_list a.btn_menu:hover {
 }
 
 .container_projeto img{
-    height: 85%;
+    width: 40%;
+    max-height: 85%;
+    object-fit: contain;
+
     border-radius: calc(15px - 1.5%);
     border-right: 2px solid #adb3c5b9;
     border-top: 2px solid #75777eb9;
     border-left: 1px solid #70747ea6;
     border-bottom: 1px solid #70747ea6;
-    /*opacity: 0.7;*/
-    /*box-shadow: 10px -10px 25px #2d3b55;*/
+
     box-shadow: 0px 0px 25px #2d3b55;
 }
-
 
 .right_container_projeto{
     display: flex;
